@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cartridge_basiclti_link xmlns="http://www.imsglobal.org/xsd/imslticc_v1p0"
+<cartridge_basiclti_link
+ xmlns="http://www.imsglobal.org/xsd/imslticc_v1p0"
  xmlns:blti="http://www.imsglobal.org/xsd/imsbasiclti_v1p0"
- xmlns:lticm="http://www.imsglobal.org/xsd/imslticm_v1p0">
+ xmlns:lticm="http://www.imsglobal.org/xsd/imslticm_v1p0"
+ xmlns:lticp="http://www.imsglobal.org/xsd/imslticp_v1p0">
+
   <blti:title>Gift Hub</blti:EEMUA Glossary>
   <blti:launch_url>https://www.gifthub.org</blti:https://www.eemua.org/glossary>
-  <lticm:options name="course_navigation">
-    <lticm:property name="enabled">true</lticm:property>
-  </lticm:options>
+
+  <blti:extensions platform="canvas.instructure.com">
+    <lticm:property name="tool_id">gift_hub_link</lticm:property>
+
+    <lticm:options name="course_navigation">
+      <lticm:property name="enabled">true</lticm:property>
+      <lticm:property name="visibility">public</lticm:property>
+      <lticm:property name="default">disabled</lticm:property>
+    </lticm:options>
+
+  </blti:extensions>
+
 </cartridge_basiclti_link>
